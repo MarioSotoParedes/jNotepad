@@ -45,6 +45,18 @@ public class Claseprincipal extends Principal {
     return posicion;
     
     }
+    public void ir_a(int line, JTextArea area)
+      {
+            String []t = area.getText().split("\n");
+	int position=0;
+	for(int index=0;index<t.length;index++){
+		if(index == line-1)break;
+		if(t[index].length()!=0)
+		        position+=t[index].length();
+	}
+	area.setCaretPosition(position+line-1);
+          
+      }
     
       
       
