@@ -418,7 +418,12 @@ UndoManager undo=new UndoManager();
 
     private void jMenu5MenuSelected(javax.swing.event.MenuEvent evt) {                                    
 
-    }                                   
+    } 
+    
+    private void ir_aActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        Claseprincipal ver = new Claseprincipal();
+        ver.ir_a(Integer.parseInt(JOptionPane.showInputDialog(null,"numero de lineas")),jTextArea1);
+    }           
 
     /**
      * @param args the command line arguments
